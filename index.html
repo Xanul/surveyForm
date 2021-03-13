@@ -8,73 +8,93 @@
     <title>Pet Survey</title>
   </head>
   <body>
-    <h1 id="title">Pet Owners Survey</h1>
-    <h3>😺️ Please tell us about your pets! 🐶️</h3>
-    <p id="description">
-      Hello! this is a small survey to let us know more about your pets!
-    </p>
+    <header id="header">
+      <h1 id="title">Pet Owners Survey</h1>
+      <h3>😺️ Please tell us about your pets! 🐶️</h3>
+
+      <div id="wide-image">
+        <img src="./img/wide.jpg" alt="pets" />
+      </div>
+    </header>
+
     <form id="survey-form">
-      <label for="name" id="name-label">Name</label>
-      <input type="text" id="name" placeholder="Name" required />
-      <br />
-      <label for="email" id="email-label">E-mail</label>
-      <input type="email" id="email" placeholder="E-Mail" required />
-      <br />
-      <label for="number" id="number-label">Age</label>
-      <input type="number" id="number" min="0" max="9999" placeholder="Age" />
-      <br />
-      <label for="dropdown" id="dropdown-label">Type of pet</label>
-      <select name="Pet" id="dropdown">
-        <option value=""></option>
-        <option value="Dog">Dog</option>
-        <option value="Cat">Cat</option>
-        <option value="Fish - Turtle">Fish - Turtle</option>
-        <option value="Birds">Birds</option>
-        <option value="Other">Other</option>
-      </select>
-      <br />
-      <p>For how many years have you been a pet owner?</p>
-      <label>
-        <input name="pet-ownership" value="0-5 Years" type="radio" />0-5 Years
-      </label>
-      <label>
-        <input name="pet-ownership" value="6-10 Years" type="radio" />6-10 Years
-      </label>
-      <label>
-        <input name="pet-ownership" value="10+ Years" type="radio" />10+ Years
-      </label>
-      <p>Where does your pet usally sleep?</p>
-      <label>
-        <input name="petsleep" value="Outside" type="checkbox" />Outside
-      </label>
-      <br />
-      <label>
-        <input name="petsleep" value="In a cage" type="checkbox" />In a cage
-      </label>
-      <br />
-      <label>
-        <input name="petsleep" value="In your bed" type="checkbox" />In your bed
-      </label>
-      <br />
-      <label>
-        <input name="petsleep" value="In his own bed" type="checkbox" />In his
-        own bed
-      </label>
-      <br />
-      <label>
-        <input name="petsleep" value="On the floor" type="checkbox" />On the
-        floor
-      </label>
-      <br />
-      <p>Do you have any aditional comments? Please let us know!</p>
-      <textarea
-        name="comment"
-        placeholder="Enter your comments here.."
-        id="comments"
-        cols="40"
-        rows="10"
-      ></textarea>
-      <br />
+      <p id="description">
+        Hello! this is a small survey to let us know more about your pets!
+      </p>
+      <div id="form-personal">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Name" required />
+        <br />
+        <label for="email" id="email-label">E-mail</label>
+        <input type="email" id="email" placeholder="E-Mail" required />
+        <br />
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="0" max="9999" placeholder="Age" />
+        <br />
+        <label for="dropdown" id="dropdown-label">Type of pet</label>
+        <select name="Pet" id="dropdown">
+          <option value=""></option>
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+          <option value="Fish - Turtle">Fish - Turtle</option>
+          <option value="Birds">Birds</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div id="form-years">
+        <p class="questions">For how many years have you been a pet owner?</p>
+        <label>
+          <input name="pet-ownership" value="0-5 Years" type="radio" />0-5 Years
+        </label>
+        <label>
+          <input name="pet-ownership" value="6-10 Years" type="radio" />6-10
+          Years
+        </label>
+        <label>
+          <input name="pet-ownership" value="10+ Years" type="radio" />10+ Years
+        </label>
+      </div>
+
+      <div id="form-sleep">
+        <p class="questions">Where does your pet usally sleep?</p>
+        <label>
+          <input name="petsleep" value="Outside" type="checkbox" />Outside
+        </label>
+        <br />
+        <label>
+          <input name="petsleep" value="In a cage" type="checkbox" />In a cage
+        </label>
+        <br />
+        <label>
+          <input name="petsleep" value="In your bed" type="checkbox" />In your
+          bed
+        </label>
+        <br />
+        <label>
+          <input name="petsleep" value="In his own bed" type="checkbox" />In his
+          own bed
+        </label>
+        <br />
+        <label>
+          <input name="petsleep" value="On the floor" type="checkbox" />On the
+          floor
+        </label>
+      </div>
+
+      <div id="form-comments">
+        <p class="questions">
+          Do you have any aditional comments? Please let us know!
+        </p>
+        <textarea
+          name="comment"
+          placeholder="Enter your comments here.."
+          id="comments"
+          cols="55"
+          rows="5"
+        ></textarea>
+        <br />
+      </div>
       <button type="submit" id="submit">Submit</button>
     </form>
   </body>
